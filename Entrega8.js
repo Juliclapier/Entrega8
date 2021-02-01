@@ -1,9 +1,12 @@
 function mostrar(){
-    let inputUno = document.getElementById("nombre").value.toLowerCase();
-let inputDos = document.getElementById("apellido").value.toLowerCase();
-let inputTres = document.getElementById("genero");
-let inputGenero = inputTres.options[inputTres.selectedIndex].text
+var inputUno = document.getElementById("nombre").value.toLowerCase();
+var inputDos = document.getElementById("apellido").value.toLowerCase();
+var inputTres = document.getElementById("genero");
+var inputGenero = inputTres.options[inputTres.selectedIndex].text
+var infoUsuario = (inputUno + " " + inputDos + " " + inputGenero)
+    console.log(infoUsuario);
 
-    console.log(inputUno + " " + inputDos + " " + inputGenero);
+    document.getElementById("saludo").innerHTML= "Bienvenidx " + inputUno;
+
 }
 
